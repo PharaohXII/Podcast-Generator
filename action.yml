@@ -1,0 +1,17 @@
+name: "Podcast Genertor"
+author: "Toledo"
+description: "Generates a feed for a podcast from a YAML file"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "git-branch"
+  color: "blue"
+inputs:
+  email:
+    description: the commiters email address
+    required: ${{github.actor }}@localhost
+  name:
+    description: the commiters name
+    required: true
+    default: ${{github.actor}}
