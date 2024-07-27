@@ -10,8 +10,8 @@ branding:
 inputs:
   email:
     description: the commiters email address
-    required: ${{github.actor }}@localhost
+    required: ${{ github.actor }}@localhost
   name:
     description: the commiters name
     required: true
-    default: ${{github.actor}}
+    default: ${{ github.actor}}
